@@ -27,35 +27,33 @@ body {
 }
 
 .sidebar {
-  flex-wrap: nowrap;
+  flex-shrink: 0;
+  padding: 16px;
   width: 300px;
   background: royalblue;
   box-sizing: border-box;
 }
 
 .card {
-  border: 1px solid #eee;
   width: 300px;
+  padding: 16px;
+  border: 1px solid #eee;
   box-shadow: 2px 4px 16px rgba(0,0,0,.06);
   border-radius: 4px;
 }
 
-a:link, a:visited {
+a {
   color: white;
-  text-align: center;
   text-decoration: none;
 }
 
-a:hover, a:active {
-  background-color: red;
-}
-
 ul {
-  padding: 8px 8px;
+  margin: 0px;
+  padding: 0px;
   list-style-type: none;
 }
 
-ul li {
+li {
   font-size: large;
   font-weight: 500;
   margin-bottom: 8px;
@@ -67,6 +65,8 @@ ul li {
 }
 
 .cards-container {
+  padding: 40px;
   display: flex;
   flex-wrap: wrap;
+  gap: 16px;
 }
